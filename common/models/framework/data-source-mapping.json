@@ -1,0 +1,25 @@
+{
+	"name": "DataSourceMapping",
+	"base": "BaseEntity",
+    "plural": "DataSourceMappings",
+	"options": {
+        "isFrameworkModel": true
+	},
+	"properties": {
+		"modelName": {
+			"type": "string",
+            "required": true,
+            "max":30
+		},
+		"dataSourceName": {
+			"type": "string",
+			"required": true,
+	        "default" : "db",
+            "max":30
+        }
+	},
+	"validations": [],
+	"relations": {},
+	"acls": [],
+	"methods": {}
+}

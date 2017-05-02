@@ -1,0 +1,5 @@
+{
+    "issuer": "edgeverve.com",
+    "audience": "evfoundation.net",
+    "secretOrKey": "secret"
+}

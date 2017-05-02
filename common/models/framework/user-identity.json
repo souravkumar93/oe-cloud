@@ -1,0 +1,17 @@
+{
+  "name": "userIdentity",
+  "plural": "userIdentities",
+  "base": "UserIdentity",
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "BaseUser",
+      "foreignKey": "userId"
+    }
+  },
+  "isFrameworkModel": true,
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,47 @@
+{
+    "name": "JobScheduler",
+    "plural": "JobSchedulers",
+    "base": "BaseEntity",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true,
+        "isFrameworkModel": true
+    },
+    "properties": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "index": true,
+            "unique": true,
+            "max": 30
+        },
+        "schedule": {
+            "type": "string",
+            "required": true,
+            "max": 30
+        },
+        "modelQuery": {
+            "type": "Object",
+            "required": true
+        },
+        "dataQuery": {
+            "type": "Object"
+        },
+        "eventName": {
+            "type": "string",
+            "required": true,
+            "max": 30
+        },
+        "payload": {
+            "type": "Object"
+        },
+        "enable": {
+            "type": "boolean"
+        }
+    },
+    "evValidations": [],
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

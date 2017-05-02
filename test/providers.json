@@ -1,0 +1,58 @@
+{
+    "local": {
+        "provider": "local",
+        "module": "passport-local",
+        "usernameField": "username",
+        "passwordField": "password",
+        "authPath": "/auth/local",
+        "successRedirect": "/auth/account",
+        "successReturnToOrRedirect": "/auth/account",
+        "failureRedirect": "/local",
+        "failureFlash": true,
+        "setAccessToken": true,
+        "session": true,
+        "forceDefaultCallback": true,
+        "cookie": true,
+        "json": true,
+        "failWithError": true,
+        "authOptions": {
+            "json": true,
+            "failWithError": true
+        }
+    },
+    "google-login": {
+        "provider": "google",
+        "module": "passport-google-oauth",
+        "strategy": "OAuth2Strategy",
+        "clientID": "1086135573960-uvciqd0s4p64den519d5tinf2jshhu5d.apps.googleusercontent.com",
+        "clientSecret": "gGPFw0VCUe5iM-siugMPUrBh",
+        "callbackURL": "/auth/google/callback",
+        "authPath": "/auth/google",
+        "callbackPath": "/auth/google/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "scope": [
+            "email",
+            "profile"
+        ],
+        "failureFlash": true
+    },
+    "google-link": {
+        "provider": "google",
+        "module": "passport-google-oauth",
+        "strategy": "OAuth2Strategy",
+        "clientID": "1086135573960-uvciqd0s4p64den519d5tinf2jshhu5d.apps.googleusercontent.com",
+        "clientSecret": "gGPFw0VCUe5iM-siugMPUrBh",
+        "callbackURL": "/link/google/callback",
+        "authPath": "/link/google",
+        "callbackPath": "/link/google/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "scope": [
+            "email",
+            "profile"
+        ],
+        "link": true,
+        "failureFlash": true
+    }
+}

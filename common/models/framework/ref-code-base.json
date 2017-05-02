@@ -1,0 +1,24 @@
+{
+    "name": "RefCodeBase",
+    "base": "BaseEntity",
+    "options": {
+        "validateUpsert": true
+    },
+    "cacheable": true,
+    "properties": {
+        "code": {
+            "type": "string",
+            "required": true,
+            "max":30
+        },
+        "description": {
+            "type": "string",
+            "required": true,
+            "max":30
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

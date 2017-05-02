@@ -1,0 +1,28 @@
+{
+  "name": "Error",
+  "base": "BaseEntity",
+  "plural":"errors",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "isFrameworkModel": true
+  },
+  "properties": {
+	    "errCode": {
+		      "type": "string",
+          "max":100
+		},
+		"errMessage": {
+		      "type": "string",
+          "max":250
+		},
+		"moreInformation": {
+		      "type": "string",
+          "max":500
+		}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

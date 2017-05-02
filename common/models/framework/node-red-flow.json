@@ -1,0 +1,22 @@
+﻿{
+  "name": "NodeRedFlow",
+  "base": "BaseEntity",
+  "idinjection": true,
+  "options": {
+    "validateUpsert": true,
+    "isFrameworkModel": true
+  },
+  "properties": {
+      "name": {
+    	      "type": "string",
+    	      "required": true
+    	},
+    	"flow" : {
+			"type" : ["object"]
+		}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

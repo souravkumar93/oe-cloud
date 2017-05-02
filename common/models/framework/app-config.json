@@ -1,0 +1,24 @@
+{
+	"name": "AppConfig",
+	"base": "BaseEntity",
+	"options": {
+		"validateUpsert": true,
+		"isFrameworkModel": true		
+	},
+	"properties": {
+		"server": {
+			"type": "object",
+			"required": true,
+			"value": {}
+		},
+		"client": {
+			"type": "object",
+			"required": true,
+			"value": {}
+		}
+	},
+	"hidden": ["server"],
+	"validations": [],
+	"acls": [],
+	"methods": {}
+}

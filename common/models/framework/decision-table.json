@@ -1,0 +1,30 @@
+{
+    "name": "DecisionTable",
+    "base": "BaseEntity",
+    "options": {
+        "validateUpsert": true,
+        "isFrameworkModel": true
+    },
+    "properties": {
+        "name": {
+            "type": "String",
+            "required": true,
+            "unique": true
+        },
+        "decisionRules": {
+            "type": "String",
+            "hidden": true
+        }
+    },
+    "evValidations": [],
+    "validations": [],
+    "relations": {
+        "document": {
+            "type": "belongsTo",
+            "model": "DocumentData",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

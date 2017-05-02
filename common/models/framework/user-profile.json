@@ -1,0 +1,32 @@
+{
+  "name": "UserProfile",
+  "base": "BaseEntity",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "department": {
+        "type": "string",
+        "required": false
+      }
+  },
+  "validations": [],
+  "relations": {
+
+  },
+  "acls": [],
+  "methods": {}
+}

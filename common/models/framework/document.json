@@ -1,0 +1,24 @@
+{
+    "name": "Document",
+    "plural": "documents",
+    "base": "Model",
+    "idInjection": false,
+    "options": {
+        "validateUpsert": true,
+        "isFrameworkModel": true
+    },
+    "properties": {},
+    "evValidations": [],
+    "validations": [],
+    "relations": {},
+    "acls": [{
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "DENY"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$authenticated",
+        "permission": "ALLOW"
+    }],
+    "methods": {}
+}

@@ -1,0 +1,40 @@
+﻿{
+    "name": "BusinessRule",
+    "base": "BaseEntity",
+    "options": {
+        "validateUpsert": true,
+        "isFrameworkModel": true
+    },
+    "properties": {
+		"modelName": {
+		   "type": "string",
+           "required": true,
+            "max":30
+		},
+        "expression": {
+            "type": "string",
+            "required": true,
+            "max":250
+        },
+		"verb": {
+		    "type": ["string"],
+		    "required": true
+		},
+		"category": {
+		    "type": "string",
+            "max":30
+		},
+		"code": {
+            "type": "string",
+            "max":30
+        },
+        "description": {
+            "type": "string",
+            "max":500
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

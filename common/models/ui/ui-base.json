@@ -1,0 +1,18 @@
+{
+  "name": "UIBase",
+  "plural": "",
+  "base": "BaseEntity",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+	],
+  "hidden": [
+	   "tenantId"
+  ],
+  "methods": {}
+}
+
