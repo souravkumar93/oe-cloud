@@ -1,4 +1,4 @@
-# OE-Cloud
+# OE-Cloud (Open Enterprise for Cloud)
 
 OE-Cloud is an architectural blueprint for building enterprise systems leveraging open source framework and powered by automation tools. It is based on [loopback framework](https://github.com/strongloop/loopback). 
 It provides framework enablers and tool-sets for end to end agile development of enterprise applications.
