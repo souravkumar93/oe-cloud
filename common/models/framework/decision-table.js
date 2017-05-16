@@ -6,7 +6,7 @@
  */
 
 var XLSX = require('xlsx');
-var evFeel = require('feel').decisionTable;
+var jsFeel = require('js-feel').decisionTable;
 var request = require('request');
 var utils = require('../../../lib/common/util');
 var assert = require('assert');
@@ -61,7 +61,7 @@ module.exports = function decisionTableFn(decisionTable) {
           });
         } else {
           try {
-            // Code to handle files for evFEEL
+            // Code to handle files for jsFEEL
             var base64String = document.documentData.split(',')[1];
             // var base64String = ctx.instance.documentData.replace('data:' + ctx.instance.fileType + ';base64,', '');
             // The following usage of new Buffer() is deprecated from node v6.0
@@ -71,7 +71,7 @@ module.exports = function decisionTableFn(decisionTable) {
             });
             var sheet = workbook.Sheets[workbook.SheetNames[0]];
             var csv = XLSX.utils.sheet_to_csv(sheet, { 'FS': delimiter });
-            var decisionRules = evFeel.csv_to_decision_table(csv);
+            var decisionRules = jsFeel.csv_to_decision_table(csv);
 
             var data = ctx.instance || ctx.data;
             data.decisionRules = JSON.stringify(decisionRules);
@@ -177,7 +177,7 @@ module.exports = function decisionTableFn(decisionTable) {
               }
             });
           } else {
-            evFeel.execute_decision_table(docId, JSON.parse(decisionTableData[0].decisionRules), data, function ExecuteDecisionTable(results) {
+            jsFeel.execute_decision_table(docId, JSON.parse(decisionTableData[0].decisionRules), data, function ExecuteDecisionTable(results) {
               data = processPayload(results, data);
               callback(null, data);
             });

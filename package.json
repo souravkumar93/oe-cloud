@@ -2,6 +2,7 @@
   "name": "oe-cloud",
   "version": "0.8.0",
   "main": "server/server.js",
+  "engines": { "node" : ">=6.9.0" },
   "scripts": {
     "precoverage": "npm install --no-optional",
     "pretest": "npm install --no-optional",
@@ -28,7 +29,7 @@
     "cron": "^1.1.0",
     "debug": "2.2.0",
     "errorhandler": "^1.4.3",
-    "feel": "git+https://github.com/EdgeVerve/feel.git",
+    "js-feel": "^1.0.0",
     "express-flash": "0.0.2",
     "express-session": "1.12.1",
     "gelf-stream": "^1.1.1",

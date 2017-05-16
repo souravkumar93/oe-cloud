@@ -31,8 +31,8 @@ module.exports = {
       'host': 'smtp.gmail.com',
       'port': 587,
       'auth': {
-        'user': 'evfoundtest@gmail.com',
-        'pass': 'evfound123'
+          'user': 'yourGmailAccount@gmail.com',
+        'pass': 'yourSecretPassword'
       }
     }]
   },
